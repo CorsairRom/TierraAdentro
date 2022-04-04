@@ -14,3 +14,4 @@
 -Logo
 -Imagenes de sala adornada con platas
 -ambientes
+--carpeta imagens
