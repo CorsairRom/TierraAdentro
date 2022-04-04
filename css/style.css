@@ -22,3 +22,16 @@
     align-items: flex-end;
     text-align: center;
 }
+.nav-link:hover{
+    background-color: forestgreen;
+    
+    
+
+}
+ul li a{
+    color: black !important;
+    border-radius: 20px;
+}
+.navbar-menu{
+    border-bottom: 2px solid green;
+}
