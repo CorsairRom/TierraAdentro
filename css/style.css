@@ -24,9 +24,6 @@
 }
 .nav-link:hover{
     background-color: forestgreen;
-    
-    
-
 }
 ul li a{
     color: black !important;
@@ -34,6 +31,9 @@ ul li a{
 }
 .navbar-menu{
     border-bottom: 2px solid green;
+}
+.ultimo{
+    margin-left: 40px;
 }
 
 /* body */
