@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* navbar */
+
+#logo{
+    width: 180px;
+    height: 80px;
+    padding: 0px;
+    
+}
+#link-logo{
+    padding: 0px;
+}
+.navbar-menu{
+    margin-left: 0px;
+}
+.container-menu{
+    margin-left: 40px;
+    align-items: flex-end;
+    text-align: center;
+}
