@@ -35,3 +35,11 @@ ul li a{
 .navbar-menu{
     border-bottom: 2px solid green;
 }
+
+/* body */
+
+.titulo{
+    justify-content: center;
+    font-style: italic;
+    color: forestgreen;
+}
