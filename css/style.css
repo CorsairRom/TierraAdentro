@@ -32,14 +32,57 @@ ul li a{
 .navbar-menu{
     border-bottom: 2px solid green;
 }
-.ultimo{
-    margin-left: 40px;
-}
+
 
 /* body */
 
 .titulo{
+    margin-top: 2%;
     justify-content: center;
     font-style: italic;
     color: forestgreen;
 }
+
+/* corrousel */
+
+.main-carousel{
+    border: 1px solid green; 
+    justify-content: center;
+    align-items: center;
+    margin: 2% 25% 0% 25%;
+    
+}
+.carousel-inner{
+    object-position: center center;
+    object-position: cover;
+}
+
+.carousel-item img{
+    height: 55vh;     
+}
+
+
+/* mediaQuery */
+@media only screen and (max-width: 1100px) {
+    .carousel-item img{
+        min-height: 200px;
+        max-height: 200px;
+        object-position: center center;  
+        object-fit: cover;
+    }
+
+    #logo{
+        width: 80px;
+        height: 40px;
+        padding: 0px;
+        
+    }
+}
+
+/* @media only screen and (max-width: 820px) {
+    .carousel-item img{
+        min-height: 410px;     
+        object-position: center center;  
+        object-fit: cover;
+    }
+} */
