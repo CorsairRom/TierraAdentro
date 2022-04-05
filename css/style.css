@@ -32,7 +32,16 @@ ul li a{
 .navbar-menu{
     border-bottom: 2px solid green;
 }
+.icono{
+    color: black;
 
+}
+.icono2{
+    color: forestgreen;
+}
+.icono2:hover{
+    color: white;
+}
 
 /* body */
 
