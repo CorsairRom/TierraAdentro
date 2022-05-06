@@ -55,11 +55,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sesion.html">
-                                <i class="fa-solid fa-user icono" ></i>
-                                Iniciar Sesion</a>
-                        </li>
+                        <li class="nav-item usserWithoutSession">
+                            <a class="nav-link" href="sesion.html" id="iniciarsecion">
+                              <i class="fa-solid fa-user icono" ></i>
+                              Iniciar Sesion</a>
+                          </li>
+                          <li class="nav-item usserLoggedIn" style="display: none">
+                            <a class="nav-link" href="verperfil.html">
+                              <i class="fa-solid fa-user icono" ></i>
+                              Ver perfil</a>
+                          </li>
                         <li class="nav-item">
                             <a class="nav-link ultimo" href="#">
                                 <i class="fa-solid fa-cart-shopping icono2" id="iconocarrito"></i>
@@ -110,7 +115,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quia saepe
                             quam officia pariatur minus quis delectus ducimus eaque, porro cumque, omnis laudantium.
                             Eaque architecto perferendis nesciunt eos ipsum fuga.</p>
-                        <a href="#" class="btn btn-success">Ver Mas Detalles</a>
+                        <a href="#" class="btn btn-success" id="btnagregar">Ver Mas Detalles</a>
                     </div>
                 </div>
             </div>
@@ -244,12 +249,15 @@
     <script>
         const btn = document.getElementById("btnagregar");
         // alert('Hola')
+        
         let cantidad = 0;
         btn.onclick = function(){
+            console.log(btn);
             cantidad ++;
-            document.getElementById('iconocarrito').textContent = cantidad;
+            document.getElementById('iconocarrito').innerHTML = cantidad;
         };
     </script>
+    <script src="./js/checkSession.js"></script>
 </body>
 
 </html>

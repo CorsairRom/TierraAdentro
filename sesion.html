@@ -10,6 +10,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <header>
@@ -37,10 +38,10 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contacto</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sesion.html">
-                      <i class="fa-solid fa-user icono"></i>
-                      Iniciar Sesion</a>
+                  <li class="nav-item" id="loginMenuItem">
+                    <a class="nav-link" href="sesion.html" id="iniciarsecion">
+                      <i class="fa-solid fa-user icono" ></i>
+                    Iniciar Sesion</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link ultimo" href="#">
@@ -66,18 +67,20 @@
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-5 mt-4 shadow-lg  bg-body rounded">
-         <form action="./sesion.html" method="get">  
+         <form action="./sesion.html" method="get" id="formulario">  
           <h3 class="fw-lighter text-center p-2">Iniciar Sesion</h3>
           <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="inputnombre" placeholder="TierraAdentro" required>
+              <input type="text" class="form-control" id="inputnombre" placeholder="TierraAdentro" required >
               <label for="inputnombre" class="form-label">Usuario</label>
             </div>
             <div class="form-floating">
               <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
               <label for="floatingPassword" class="form-label">contrasena</label>
             </div>
-            <input type="submit" value="iniciar" class="btn btn-primary mt-2">
+            <button type="submit" class="btn btn-primary mt-2" id="enviaruser" onclick="inicio(event)">Inicia Sesion</button>
+            <!-- <input type="submit" value="iniciar" class="btn btn-primary mt-2" onclick="datosusuario()"> -->
           </form>
+          <div id="accesodenegado"></div>
           <div class="text-center">
             <a href="./recuperar.html" class="mt-4">Recuperar contrasena</a>
             <p>
@@ -163,6 +166,7 @@
   </div>
   <!-- End of .container -->
   <script src="https://kit.fontawesome.com/3dfcf40508.js" crossorigin="anonymous"></script>
-    
+  <!-- <script src="./js/formulario.js"></script> -->
+   <script src="./js/main.js"></script>
 </body>
 </html>

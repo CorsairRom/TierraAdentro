@@ -46,18 +46,5 @@ function checkRut(rut) {
     rut.setCustomValidity('');
 }
 
-// function agregar(){
-//     const btn = document.getElementById("btnagregar");
-//     // alert('Hola')
-//     let cantidad = 0;
-//     btn.onclick = function(){
-//         cantidad ++;
-//         document.getElementById('iconocarrito').textContent = cantidad;
-//     };
-    
 
-    
-
-    
-// }
 
