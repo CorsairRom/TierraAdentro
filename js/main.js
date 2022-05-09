@@ -6,6 +6,11 @@ const arrayUsuarios = [
     
 ];
 
+
+const buscarUsuario = arrayUsuarios.map(function(usuarios) {
+    return usuarios.usuario;
+});
+console.log(buscarUsuario[0]);
 function containsObject(array, object) {
     return array.some((e) => Object.entries(e).toString() === Object.entries(object).toString())
 }
@@ -21,8 +26,14 @@ function inicio(evt) {
     // test = arrayUsuarios.indexOf({usuario: getusuario, pass: getpass})
     let userOb=containsObject(arrayUsuarios, {usuario: getusuario, pass: getpass})
     if (userOb==true) {
-        localStorage.setItem('user', 'admin'); // cuando se conecta
-        document.location.href="index.html"; // redireccion al home
+        if (buscarUsuario[0]==getusuario) {
+            localStorage.setItem('user','admin');
+            document.location.href="panelAdmin.html";
+        } else {
+            localStorage.setItem('user', 'admin'); // cuando se conecta
+            document.location.href="index.html"; // redireccion al home
+            
+        }
     } else {
         let denegado = document.getElementById('accesodenegado');
         denegado.innerText="Usuario Incorrecto, Intente denuevo";
