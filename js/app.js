@@ -124,6 +124,7 @@ const pintarCarrito = () =>{
          alert("Gracias Por su Compra")
          carrito = {}
          pintarCarrito()
+         document.location.href="verperfil.html"; 
      })
  }
 const btnAccion = e => {
