@@ -1,0 +1,161 @@
+[
+    {
+        "precio": 500,
+        "id": "flor1",
+        "title": "clavel",
+        "thumbnailUrl": "img/flores/clavel.jpg"
+    },
+    {
+        "precio": 3000,
+        "id": "flor2",
+        "title": "crisantemo",
+        "thumbnailUrl": "img/flores/crisantemo.jpg"
+    },
+    {
+        "precio": 1000,
+        "id": "flor3",
+        "title": "margaritas",
+        "thumbnailUrl": "img/flores/margaritas.jpg"
+    },
+    {
+        "precio": 5000,
+        "id": "flor4",
+        "title": "narcisos",
+        "thumbnailUrl": "img/flores/narcisos.jpg"
+    },
+    {
+        "precio": 2000,
+        "id": "flor5",
+        "title": "rosas",
+        "thumbnailUrl": "img/flores/rosas.jpg"
+    },
+    {
+        "precio": 15000,
+        "id": "flor6" ,
+        "title": "violetas",
+        "thumbnailUrl": "img/flores/violetas.jpg"
+    },
+    {
+        "precio": 50000,
+        "id": "arbusto1",
+        "title": "Arbusto Decorativo",
+        "thumbnailUrl": "img/arbustos/arbustos_1.jpg"
+    },
+    {
+        "precio": 35000,
+        "id": "arbusto2",
+        "title": "Planta Para Muro",
+        "thumbnailUrl": "img/arbustos/arbustos_2.jpg"
+    },
+    {
+        "precio": 2000,
+        "id": "arbusto3",
+        "title": "Esfera Vegetal",
+        "thumbnailUrl": "img/arbustos/arbustos_3.jpg"
+    },
+    {
+        "precio": 55000,
+        "id": "arbusto4",
+        "title": "Arbusto Frutal",
+        "thumbnailUrl": "img/arbustos/arbustos_4.jpg"
+    },
+    {
+        "precio": 6000,
+        "id": "arbusto5",
+        "title": "Arbusto de Rosas",
+        "thumbnailUrl": "img/arbustos/arbustos_5.jpg"
+    },
+    {
+        "precio": 2500,
+        "id": "arbusto6" ,
+        "title": "Floral",
+        "thumbnailUrl": "img/arbustos/arbustos_6.jpg"
+    },
+    {
+        "precio": 2000,
+        "id": "tierra1",
+        "title": "Anasac",
+        "thumbnailUrl": "img/tierra de hojas/tierra de hojas_1.jpg"
+    },
+    {
+        "precio": 4000,
+        "id": "tierra2",
+        "title": "Gaspar Green",
+        "thumbnailUrl": "img/tierra de hojas/tierra de hojas_2.jpg"
+    },
+    {
+        "precio": 15000,
+        "id": "tierra3",
+        "title": "Armony Tierra De Hoja",
+        "thumbnailUrl": "img/tierra de hojas/tierra de hojas_3.jpg"
+    },
+    {
+        "precio": 8000,
+        "id": "tierra4",
+        "title": "RE Raiz",
+        "thumbnailUrl": "img/tierra de hojas/tierra de hojas_4.jpg"
+    },
+    {
+        "precio": 4000,
+        "id": "tierra5",
+        "title": "Tierra de hoja reforzada",
+        "thumbnailUrl": "img/tierra de hojas/tierra de hojas_5.jpg"
+    },
+    {
+        "precio": 1000,
+        "id": "tierra6" ,
+        "title": "Sustrato Vegetal",
+        "thumbnailUrl": "img/tierra de hojas/tierra de hojas_6.jpg"
+    },
+    {
+        "precio": 500,
+        "id": "macetero1",
+        "title": "Cactuguaus",
+        "thumbnailUrl": "img/Maceteros/macetero_7.jpg"
+    },
+    {
+        "precio": 2000,
+        "id": "macetero2",
+        "title": "Mini jungla",
+        "thumbnailUrl": "img/Maceteros/macetero_2.jpg"
+    },
+    {
+        "precio": 1000,
+        "id": "macetero3",
+        "title": "Plantiamigos",
+        "thumbnailUrl": "img/Maceteros/macetero_1.jpg"
+    },
+    {
+        "precio": 6000,
+        "id": "macetero4",
+        "title": "Escaleras verdes",
+        "thumbnailUrl": "img/Maceteros/macetero_4.jpg"
+    },
+    {
+        "precio": 2000,
+        "id": "macetero5",
+        "title": "Helechos bajo techo",
+        "thumbnailUrl": "img/Maceteros/macetero_5.jpg"
+    },
+    {
+        "precio": 1000,
+        "id": "macetero6",
+        "title": "EcoMacetas",
+        "thumbnailUrl": "img/Maceteros/macetero_6.jpg"
+    },
+    {
+        "precio": 1500,
+        "id": "sus",
+        "title": "Suscripcion",
+        "thumbnailUrl": "https://www.axondigital.mx/wp-content/uploads/2019/07/suscripciontips.jpg"
+    }
+]
+
+
+
+
+
+
+
+
+
