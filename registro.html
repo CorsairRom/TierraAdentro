@@ -12,26 +12,13 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        #logo {
-        max-width: 140px;
-        max-height: 80px;
-        }
-    </style>
 </head>
-
-
-
-<!--------------------------------------------------logo---------------------------------------------------------------------------------->
 <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light navbar-menu ">
         <div class="container d-flex  justify-content-around">
-
             <a class="navbar-brand" href="#" id="link-logo">
                 <img src="./img/logo.png" alt="" id="logo" class="img-responsive rounded">
             </a>
-<!---------------------------------barra de navecacion---------------------------------------------------------------------------->
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +31,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="producto.html">Productos</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quienesomos.html">Quienes Somos</a>
@@ -57,9 +44,13 @@
                                 <i class="fa-solid fa-user icono"></i>
                                 Iniciar Sesion</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item usserLoggedIn" style="display: none">
                             <a class="nav-link ultimo" href="#">
                                 <i class="fa-solid fa-cart-shopping icono2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item usserWithoutSession">
+                            <a class="nav-link ultimo" href="#">
                             </a>
                         </li>
                     </ul>
@@ -70,150 +61,198 @@
     </nav>
 </header>
 
-
-
 <body class="bg-light">
 
-<!-- formulario ----------------------------------------------------------------------------------------------------------------->
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
+    <!-- formulario -->
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-75">
+            <div class="row justify-content-center align-items-center h-75">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registro</h3>
+                            <form>
 
-                </div>
-                <div class="col-sm-4">
-                    <div class="mt-6 p-3 shadow border rounded">
-                        <h4>Registro</h4>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
 
-<!---------------------------------------------Nombres----------------------------------------------------------------------------------->
-                        <form>
-                            <div class="row">
-                                <div class="col">
-                                    <label for="saludo" class="form-label">Primer Nombre</label>
-                                    <input type="text" class="form-control" name="primer nombre">
+                                        <div class="form-outline">
+                                            <input type="text" id="PrimerNombre" class="form-control form-control-lg"
+                                                required />
+                                            <label class="form-label" for="PrimerNombre">Primer nombre</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="SegundoNombre" class="form-control form-control-lg"
+                                                required />
+                                            <label class="form-label" for="SegundoNombre">Segundo nombre</label>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="col">
-                                    <label for="saludo" class="form-label">Segundo Nombre</label>
-                                    <input type="text" class="form-control" name="segundo nombre">
-                                </div>
-                            </div>
-                        </form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
 
-<!---------------------------------------------RUT----------------------------------------------------------------------------------->
-                        <div class="mb3">
-                            <label for="" class="form-label">Rut</label>
-                            <input type="number" class="form-control" name="rut" id="saludo" placeholder="">
+                                        <div class="form-outline">
+                                            <input type="text" id="PrimerApellido" class="form-control form-control-lg"
+                                                required />
+                                            <label class="form-label" for="PrimerApellido">Primer apellido</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="SegundoApellido" class="form-control form-control-lg"
+                                                required />
+                                            <label class="form-label" for="SegundoApellido">Segundo apellido</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="rut" name="rut" class="form-control form-control-lg"
+                                                required oninput="checkRut(this)" />
+                                            <label class="form-label" for="rut">Rut</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="direccion" class="form-control form-control-lg"
+                                                required />
+                                            <label class="form-label" for="direccion">Direccion</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-6 d-flex align-items-center">
+
+                                        <div class="form-outline datepicker w-100">
+                                            <input type="number" class="form-control form-control-lg" id="edad"
+                                                required />
+                                            <label for="edad" class="form-label">Edad</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <h6 class="mb-2 pb-1">Genero: </h6>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="generoFemenino" value="option1" />
+                                            <label class="form-check-label" for="generoFemenino">Femenino</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="generoMasculino" value="option2" />
+                                            <label class="form-check-label" for="generoMasculino">Masculino</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="otroGenero" value="option3" />
+                                            <label class="form-check-label" for="otroGenero">Otro</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="email" id="direccionEmail" class="form-control form-control-lg"
+                                                required />
+                                            <label class="form-label" for="direccionEmail">Email</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="numeroTelefono" class="form-control form-control-lg"
+                                                required />
+                                            <label class="form-label" for="numeroTelefono">Telefono</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-2">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                                </div>
+
+                            </form>
                         </div>
-
-<!---------------------------------------------Direccion----------------------------------------------------------------------------------->
-                        <div class="mb3">
-                            <label for="" class="form-label">Direccion</label>
-                            <input type="text" class="form-control" name="rut" id="saludo" placeholder="">
-                        </div>
-
-<!---------------------------------------------edad y genero ----------------------------------------------------------------------------------->
-                        <div class="mb3">
-                            <label for="" class="form-label">Edad</label>
-                            <input type="number" class="form-control" name="rut" id="saludo" placeholder="">
-                        </div>
-
-                        <label for="" class="form-label">Genero:</label>
-                        <form action="/action_page.php">
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
-                                    checked>
-                                <label class="form-check-label" for="radio1">Femenino</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="radio2" name="optradio"
-                                    value="option2">
-                                <label class="form-check-label" for="radio2">Masculino</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="radio3" name="optradio"
-                                    value="option3">
-                                <label class="form-check-label">Otro</label>
-                            </div>
-                        </form>
-
-<!---------------------------------------------Email y Telefono ----------------------------------------------------------------------------------->
-                        <form>
-                            <div class="row">
-                                <div class="col">
-                                    <label for="saludo" class="form-label">Email</label>
-                                    <input type="text" class="form-control" placeholder="" name="email">
-                                </div>
-                                <div class="col">
-                                    <label for="saludo" class="form-label">Telefono</label>
-                                    <input type="number" class="form-control" placeholder=""
-                                        name="">
-                                </div>
-                            </div>
-                        </form>
-
-
-
-
-                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+        </div>
+    </section>
 
+
+
+
+
+    <!-- footer -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5" style="border-top: 2px solid green;">
+
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                        role="button"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                        role="button"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                        role="button"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                        role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!"
+                        role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                </section>
+                <!-- Section: Social media -->
             </div>
-        </div>
-        </div>
+            <!-- Grid container -->
 
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: forestgreen; border-radius: 20px;">
+                © 2022 Copyright:
+                <a class="text-white" href="index.html" style="text-decoration: none;">Tierra Adentro</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
 
-
-
-
-        <!-- footer -->
-        <!-- Remove the container if you want to extend the Footer to full width. -->
-        <div class="container my-5" style="border-top: 2px solid green;">
-
-            <footer class="bg-light text-center text-white">
-                <!-- Grid container -->
-                <div class="container p-4 pb-0">
-                    <!-- Section: Social media -->
-                    <section class="mb-4">
-                        <!-- Facebook -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
-                            role="button"><i class="fab fa-facebook-f"></i></a>
-
-                        <!-- Twitter -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
-                            role="button"><i class="fab fa-twitter"></i></a>
-
-                        <!-- Google -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
-                            role="button"><i class="fab fa-google"></i></a>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
-                            role="button"><i class="fab fa-instagram"></i></a>
-
-                        <!-- Linkedin -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!"
-                            role="button"><i class="fab fa-linkedin-in"></i></a>
-
-                    </section>
-                    <!-- Section: Social media -->
-                </div>
-                <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: forestgreen; border-radius: 20px;">
-                    © 2022 Copyright:
-                    <a class="text-white" href="index.html" style="text-decoration: none;">Tierra Adentro</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
-
-        </div>
-        <!-- End of .container -->
-        <script src="https://kit.fontawesome.com/3dfcf40508.js" crossorigin="anonymous"></script>
-        <script src="./js/validaciones.js"></script>
-    </body>
+    </div>
+    <!-- End of .container -->
+    <script src="https://kit.fontawesome.com/3dfcf40508.js" crossorigin="anonymous"></script>
+    <script src="./js/validaciones.js"></script>
+</body>
 
 </html>

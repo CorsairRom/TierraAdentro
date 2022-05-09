@@ -107,3 +107,16 @@ ul li a{
     background-size: cover;
     background-position: center;
 }
+
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+input.error{
+    border: 1px solid red;
+}
+label.error{
+    color: red;
+    margin-right: 10px;
+}
