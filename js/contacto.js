@@ -1,5 +1,7 @@
-$().ready(function() {
-	$("#formcontacto").validate({
+
+
+$(document).ready(function() {
+	$("#contact-form").validate({
 		rules: {
 			name: { required: true, minlength: 3 ,maxlength: 50 },
 			email: { required:true, email: true},
@@ -13,21 +15,19 @@ $().ready(function() {
 			message : "El campo Mensaje es obligatorio"
 		}
 	});
-});
-
-
-
-$("#guardar").click(function() {
-	if($("#formcontacto").valid() == false){
-        return;
-    }
-    let name = $("#name").val()
-    let email = $("#email").val()
-    let titulo = $("#titulo").val()
-    let message = $("#message").val()
-
-    
+	$( "#submit" ).click(function() {
+		if ($("#contact-form").validate().form()) {
+			alert('Mensaje enviado')
+			
+		}
+		
+	});
+	
 
 });
+
+
+
+
 
 
