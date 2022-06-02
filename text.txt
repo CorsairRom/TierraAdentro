@@ -1,0 +1,54 @@
+ MACETERO NOMBRE DE LOS MACETEROS Y SUS IMAGENES
+ -----------------------------------------------------------------------------------------------------------
+
+                    <img src="img/Maceteros/macetero_7.jpg" class="img-fluid rounded-start" alt="...">
+
+                        <h5 class="card-title">Cactuguaus</h5>
+-----------------------------------------------------------------------------------------------
+
+                    <img src="img/Maceteros/macetero_2.jpg" class="img-fluid rounded-start" alt="...">
+
+                        <h5 class="card-title">Mini jungla</h5>
+----------------------------------------------------------------------------------------
+
+                <img src="img/Maceteros/macetero_1.jpg" class="img-fluid rounded-start" alt="...">
+
+                    <h5 class="card-title">Plantiamigos</h5>
+-----------------------------------------------------------------------
+
+            <img src="img/Maceteros/macetero_4.jpg" class="img-fluid rounded-start" alt="...">
+
+                <h5 class="card-title">Escaleras verdes</h5>
+-------------------------------------------------------------------
+
+                <img src="img/Maceteros/macetero_5.jpg" class="img-fluid rounded-start" alt="...">
+
+                    <h5 class="card-title">Helechos bajo techo </h5>
+-----------------------------------------------------------------------
+
+                <img src="img/Maceteros/macetero_6.jpg" class="img-fluid rounded-start" alt="...">
+
+                    <h5 class="card-title">EcoMacetas</h5>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TIERRA DE HOJA NOMBRE CON SUS RESPECTIVAS IMAGENES
+
+                    <img src="img/tierra de hojas/tierra de hojas_1.jpg" class="img-fluid rounded-start" alt="...">
+                        <h5 class="card-title">Anasac</h5>
+                
+                    <img src="img/tierra de hojas/tierra de hojas_2.jpg" class="img-fluid rounded-start" alt="...">
+                        <h5 class="card-title">Gaspar Green</h5>
+
+                    <img src="img/tierra de hojas/tierra de hojas_3.jpg" class="img-fluid rounded-start" alt="...">
+                        <h5 class="card-title">Armony Tierra De Hoja</h5>
+                        
+                <img src="img/tierra de hojas/tierra de hojas_4.jpg" class="img-fluid rounded-start" alt="...">
+                    <h5 class="card-title">RE Raiz</h5>
+                   
+                <img src="img/tierra de hojas/tierra de hojas_5.jpg" class="img-fluid rounded-start" alt="...">
+                    <h5 class="card-title">Tierra de hoja reforzada</h5>
+                   
+                <img src="img/tierra de hojas/tierra de hojas_6.jpg" class="img-fluid rounded-start" alt="...">
+                    <h5 class="card-title">Sustrato Vegetal</h5>
+                   
