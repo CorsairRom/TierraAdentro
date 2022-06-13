@@ -8,8 +8,9 @@
     <title>Tierra Adentro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <script src="js/contacto.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -122,10 +123,10 @@
                                 <div class="md-form">
                                     <label for="message">Tu mensaje</label>
                                     <textarea type="text" id="message" name="message" rows="2"
-                                    class="form-control md-textarea" required></textarea>
+                                        class="form-control md-textarea" required></textarea>
                                 </div>
                             </div>
-                            
+
                     </form>
                     <!--Grid row-->
 
@@ -163,12 +164,15 @@
                 </ul>
             </div>
 
-            <div>
-                <div id="map"></div>
-                <script src="./js/map.js"></script>
+
+
                 <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-            </div>
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmJ8K_OLOXKu5_-wAsN2qDKin2Dq8E1fE&callback=initMap&libraries=&v=weekly"
+                defer
+                ></script>
+                <script src="js/map.js"></script>
+                <!--The div element for the map -->
+                <div id="map"></div>
             <!--Grid column-->
 
 
